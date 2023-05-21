@@ -30,21 +30,20 @@ public class MainCharacter : MonoBehaviour
         _time += Time.deltaTime;
         
         //1초당 점수 101 증가 버전
+        /*
         if (_time >= 1f)
         {
             ScoreManager.ins.ChangeScore(101);
             _time = 0f;
         }
+        */
 
         //0.3초당 점수 31 증가 버전
-        //현재는 1초당 증가되는 버전으로 해 뒀습니다.
-        /*
         if (_time >= 0.3f)
         {
             ScoreManager.ins.ChangeScore(31);
             _time = 0f;
         }
-        */
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
